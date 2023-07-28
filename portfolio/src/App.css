@@ -17,3 +17,12 @@ button {
   font-size: 4vmin;
   border: 1.5px solid black;
 }
+
+.header {
+  text-shadow: -.25px .25px black;
+  font-size: 5vmin;
+}
+
+.card {
+  padding: 2em;
+}
