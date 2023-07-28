@@ -18,9 +18,21 @@ button {
   border: 1.5px solid black;
 }
 
+a {
+  margin-right: 1vmin;
+  margin-left: 1vmin;
+  margin-bottom: 1vmin;
+  text-shadow: -.25px .25px black;
+}
+
 .header {
   text-shadow: -.25px .25px black;
   font-size: 5vmin;
+}
+
+.myProfile {
+  max-width: 42vmin;
+  border-radius: 50%;
 }
 
 .card {

@@ -23,7 +23,7 @@ const App = () => {
     <main>
       <Routes>
         <Route path= '/' element={<Home />}/>
-        <Route path= '/' element={<About />}/>
+        <Route path= '/about' element={<About />}/>
       </Routes>
       <div className='card'>
         <button onClick={() =>
