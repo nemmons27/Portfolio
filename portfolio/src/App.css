@@ -10,14 +10,6 @@ body {
   margin: 0;
 }
 
-button {
-  border-radius: 5px;
-  color: darkmagenta;
-  background-color: burlywood;
-  font-size: 4vmin;
-  border: 1.5px solid black;
-}
-
 a {
   margin-right: 1vmin;
   margin-left: 1vmin;
@@ -27,7 +19,22 @@ a {
 
 .header {
   text-shadow: -.25px .25px black;
-  font-size: 5vmin;
+  font-size: 4vmin;
+}
+
+.subheader {
+  font-size: 3.5vmin;
+}
+
+p {
+  font-size: 2vmin;
+}
+
+.card {
+  padding: 2em;
+  margin: 2vmin;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 .myProfile {
@@ -35,6 +42,42 @@ a {
   border-radius: 50%;
 }
 
-.card {
-  padding: 2em;
+button {
+  border-radius: 5px;
+  color: darkorchid;
+  background-color: burlywood;
+  font-size: 3vmin;
+  border: 1.5px solid black;
+}
+
+button:hover {
+  border-radius: 5px;
+  background-color: bisque;
+  color: darkorchid;
+  transform: scale(105%);
+  transition: ease-in 142ms;
+}
+
+.githubPlug {
+  border-radius: 5px;
+  background-color: bisque;
+  color: darkorchid;
+  font-size: 3vmin;
+  border: 1px solid ;
+}
+
+.githubPlug:hover {
+  border-radius: 5px;
+  background-color: bisque;
+  color: darkorchid;
+  transform: scale(105%);
+  transition: ease-in 142ms;
+}
+
+.linkedinPlug {
+  border-radius: 5px;
+  color: darkorchid;
+  background-color: bisque;
+  font-size: 3vmin;
+  border: 1px solid ;
 }
