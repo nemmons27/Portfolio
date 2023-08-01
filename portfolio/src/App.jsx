@@ -11,7 +11,6 @@ const App = () => {
     return new Date().getFullYear()
   }
 
-
   return (
     <div>
     <header>
@@ -25,6 +24,7 @@ const App = () => {
         <Route path= '/' element={<Home />}/>
         <Route path= '/about' element={<About />}/>
       </Routes>
+
       <br />
       <footer className='footer'>
       © {getYear()} Emmons, all rights reserved
