@@ -25,13 +25,6 @@ const App = () => {
         <Route path= '/' element={<Home />}/>
         <Route path= '/about' element={<About />}/>
       </Routes>
-      <div className='card'>
-        <button onClick={() =>
-        setCount((count) => count + 1)}>
-          {count} clicks
-        </button>
-
-      </div>
       <br />
       <footer className='footer'>
       © {getYear()} Emmons, all rights reserved
