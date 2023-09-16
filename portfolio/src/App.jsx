@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router'
 import Nav from './components/Nav'
 import Home from './pages/Home'
 import About from './pages/About'
+import background from './assets/Portfolio-background.jpeg'
 import './App.css'
 
 const App = () => {
@@ -12,7 +13,11 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div style={{ backgroundImage: `url(${background})`,
+                  backgroundSize: "cover",
+                  width: '100vw',
+                  height: '100vh'
+    }}>
     <header>
       <Nav />
     </header>
