@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import background from '../assets/Portfolio-background.jpeg'
 
 const Home = () => {
 
     return (
-        <div>
+        <><div className="banner" style={{ backgroundImage: `url(${background})`}}>
             <h3 className="header">Nicholas Emmons</h3>
             <h5 className="subheader">Software Engineer - Anime Maniac - Fullstack Developer</h5>
             <br />
             <h5 className="subheader">Web Applications</h5>
-            <div className="card">
+        </div><div className="card">
                 <Link to="https://clearance-b56453d7410f.herokuapp.com/" target="_blank">
                     <img className="projectPic" src="https://static01.nyt.com/images/2017/12/19/autossell/STILL2/STILL2-square640-v3.gif" alt="clearancePic" />
                     <h3>Clearance</h3>
@@ -23,9 +24,7 @@ const Home = () => {
                 <Link to="http://www.github.com/cherch173/clearance" target="_blank">
                     <button className="githubBtn">Github</button>
                 </Link>
-            </div>
-            <br />
-            <div className="card">
+            </div><br /><div className="card">
                 <img className="projectPic" src="https://github.com/nemmons27/Gamers_Asylum/raw/main/images/StrawhatsTogether.gif" alt="asylumPic" />
                 <h3>Gamer's Asylum</h3>
                 <label className="label" htmlFor="techUsed">Tech Used</label>
@@ -35,9 +34,7 @@ const Home = () => {
                 <Link to="https://github.com/nemmons27/Gamers_Asylum" target="_blank">
                     <button className="githubBtn">Github</button>
                 </Link>
-            </div>
-            <br />
-            <div className="card">
+            </div><br /><div className="card">
                 <img className="projectPic" src="https://giffiles.alphacoders.com/135/135716.gif" alt="watchlistPic" />
                 <h3>God's Watchlist</h3>
                 <label className="label" htmlFor="techUsed">Tech Used</label>
@@ -47,11 +44,7 @@ const Home = () => {
                 <Link to="https://github.com/nemmons27/gods_watchlist" target="_blank">
                     <button className="githubBtn">Github</button>
                 </Link>
-            </div>
-            <br />
-            <h5 className="subheader">Browser-Based Games</h5>
-            <br />
-            <div className="card">
+            </div><br /><h5 className="subheader">Browser-Based Games</h5><br /><div className="card">
                 <img className="projectPic" src="https://64.media.tumblr.com/76b5fb173bdf9091c2f7fa209237c5c1/tumblr_oqlx3zKu8M1wntix3o1_500.gif" alt="piecePic" />
                 <h3>Road To One Piece</h3>
                 <label className="label" htmlFor="techUsed">Tech Used</label>
@@ -61,8 +54,7 @@ const Home = () => {
                 <Link to="https://github.com/nemmons27/one-piece-memory" target="_blank">
                     <button className="githubBtn">Github</button>
                 </Link>
-            </div>
-        </div>
+            </div></>
     )
 }
 
