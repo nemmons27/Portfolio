@@ -4,18 +4,27 @@ import { Link } from "react-router-dom";
 import background from '../assets/matrix-code.gif'
 
 const Home = () => {
-    const scrollGames = useRef()
-    const scrollBio = useRef()
-    const scrollUp = useRef()
+    const scrollGamesRef = useRef();
+    const scrollBioRef = useRef();
+    const scrollUpRef = useRef();
 
+    const scrollGames = () => {
+        scrollGamesRef.current.scrollIntoView({ behavior: 'smooth'})
+    }
+    const scrollBio = () => {
+        scrollBioRef.scrollIntoView({ behavior: 'smooth'})
+    }
+    const scrollUp = () => {
+        scrollUpRef.current.scrollIntoView({ behavior: 'smooth'})
+    }
     return (
-        <><div className="banner" style={{ backgroundImage: `url(${background})`}}>
+        <><div className="banner" ref={scrollUpRef} style={{ backgroundImage: `url(${background})`}}>
             <img src="https://avatars.githubusercontent.com/u/131407670?v=4" className="myProfile" alt="myProfile" />
             <h3 className="header">Nicholas Emmons</h3>
             <h5 className="subheader">Software Engineer - Anime Maniac - Fullstack Developer</h5>
             </div>
-            <button className="scrollBtn" onClick={}>Browser Games</button><br />
-            <button className="scrollBtn" onClick={}>Bio</button><br />
+            <button className="scrollBtn" onClick={scrollGames}>Browser Games</button><br />
+            <button className="scrollBtn" onClick={scrollBio}>Bio</button><br />
             <h5 className="subheader">Web Applications</h5>
         <div className="card">
                 <Link to="https://clearance-b56453d7410f.herokuapp.com/" target="_blank">
@@ -60,7 +69,7 @@ const Home = () => {
                 <Link to="" target="_blank">
                     <button className="githubBtn">Deployed Site</button>
                 </Link>
-            </div><br /><h5 className="subheader">Browser-Based Games</h5><br /><div className="card">
+            </div><br /><h5 className="subheader" ref={scrollGamesRef}>Browser-Based Games</h5><br /><div className="card">
                 <img className="projectPic" src="https://64.media.tumblr.com/76b5fb173bdf9091c2f7fa209237c5c1/tumblr_oqlx3zKu8M1wntix3o1_500.gif" alt="piecePic" />
                 <h3>Road To One Piece</h3>
                 <label className="label" htmlFor="techUsed">Tech Used</label>
@@ -74,14 +83,14 @@ const Home = () => {
                     <button className="githubBtn">Deployed Site</button>
                 </Link>
             </div>
-                <br /><h5 className="bioheader">Bio</h5>
+                <br /><h5 className="bioheader" ref={scrollBioRef}>Bio</h5>
                 <div className="biocard">
                 <h2>Hey, I'm Nicholas.</h2>
             <p>I'm a Software Engineer with a love of finding new challenges and a passion for anime. In my first 6 months coding, I've built several applications with varying uses from scratch. Each application required different languages such as Python, Express and React but thats what makes it so enticing to continue venturing on this road.</p>
             <p>I graduated from General Assembly's Software Engineering 2.0 Immersive (which gave me a strong 420 hours of coding experience) in July of 2023. Those hours left me with a hunger to find more ways to build these websites that I once had zero knowledge of the background work of it. Previously, I worked as a security guard for the UBS Arena in Elmont, NY. I had my regular duties as a guard initially but once they saw how easily I handled everything, they decided to give me a squad to work with and watch over. I ended up doing this with 2 more squads before I decided to do more than what I previously believed I was capable of. </p>
             <a href="https://www.linkedin.com/in/nemmons27/" className="linkedinPlug">LinkedIn</a> | <a href="https://github.com/nemmons27" className="githubPlug">Github</a> 
                 </div>
-                <button className="scrollBtn" onClick={}>Back to Top</button><br />
+                <button className="scrollBtn" onClick={scrollUp}>Back to Top</button><br />
 
             </>
     )
