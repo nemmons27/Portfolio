@@ -1,7 +1,19 @@
 import React from "react";
 import { useRef } from "react";
-import { Link } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
 import background from '../assets/matrix-code.gif'
+import React from "react";
+import React from "react";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import App from "./App.jsx";
+import App from "./App.jsx";
+import App from "./App.jsx";
 
 const Home = () => {
     const scrollGamesRef = useRef();
@@ -90,7 +102,7 @@ const Home = () => {
                 <p>Javascript | CSS | HTML</p>
                 <label className="label" htmlFor="description">Description:</label>
                 <p>Can you stop Naruto before the 9 tails detroys the Village?</p>
-                <Link to="https://github.com/nemmons27/one-piece-memory" target="_blank">
+                <Link to="https://github.com/nemmons27/whac-a-beast" target="_blank">
                     <button className="githubBtn">Github</button>
                 </Link>
                 <Link to="" target="_blank">
@@ -111,3 +123,8 @@ const Home = () => {
 }
 
 export default Home
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <Router>
+    <App />
+  </Router>
+)
