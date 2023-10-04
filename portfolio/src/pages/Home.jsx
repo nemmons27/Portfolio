@@ -1,20 +1,10 @@
 import React from "react";
 import { useRef } from "react";
 import { BrowserRouter, Link } from "react-router-dom";
-import background from '../assets/matrix-code.gif'
-import React from "react";
-import React from "react";
-import React from "react";
-import ReactDOM from "react-dom/client";
-import ReactDOM from "react-dom/client";
+import background from '../assets/matrix-code.gif';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router } from "react-router-dom";
-import { BrowserRouter as Router } from "react-router-dom";
-import { BrowserRouter as Router } from "react-router-dom";
-import App from "./App.jsx";
-import App from "./App.jsx";
-import App from "./App.jsx";
-
+import App from "../App.jsx"
 const Home = () => {
     const scrollGamesRef = useRef();
     const scrollBioRef = useRef();
@@ -24,7 +14,7 @@ const Home = () => {
         scrollGamesRef.current.scrollIntoView({ behavior: 'smooth'})
     }
     const scrollBio = () => {
-        scrollBioRef.scrollIntoView({ behavior: 'smooth'})
+        scrollBioRef.current.scrollIntoView({ behavior: 'smooth'})
     }
     const scrollUp = () => {
         scrollUpRef.current.scrollIntoView({ behavior: 'smooth'})
