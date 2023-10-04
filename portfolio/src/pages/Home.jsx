@@ -96,7 +96,7 @@ const Home = () => {
                 </Link>
             </div>
             <div className="card">
-                <img className="projectPic" src="https://media2.giphy.com/media/U6IQE5XjiF5hm/giphy.gif?cid=ecf05e47xutgvi8guh2m5umnmxacbwa4j4m6lpsu0q8fbam5&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="9tailPic" />
+                <img className="projectPic" src="" alt="9tailPic" />
                 <h3>Whac A Beast</h3>
                 <label className="label" htmlFor="techUsed">Tech Used</label>
                 <p>Javascript | CSS | HTML</p>
@@ -123,8 +123,3 @@ const Home = () => {
 }
 
 export default Home
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <Router>
-    <App />
-  </Router>
-)
