@@ -96,12 +96,12 @@ const Home = () => {
                 </Link>
             </div>
             <div className="card">
-                <img className="projectPic" src="" alt="9tailPic" />
+                <img className="projectPic" src="https://media2.giphy.com/media/U6IQE5XjiF5hm/giphy.gif?cid=ecf05e47xutgvi8guh2m5umnmxacbwa4j4m6lpsu0q8fbam5&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="piecePic" />
                 <h3>Whac A Beast</h3>
                 <label className="label" htmlFor="techUsed">Tech Used</label>
                 <p>Javascript | CSS | HTML</p>
                 <label className="label" htmlFor="description">Description:</label>
-                <p>Can you stop Naruto before the 9 tails detroys the Village?</p>
+                <p>Can you stop Naruto before the 9 tails destroys the village?</p>
                 <Link to="https://github.com/nemmons27/whac-a-beast" target="_blank">
                     <button className="githubBtn">Github</button>
                 </Link>
